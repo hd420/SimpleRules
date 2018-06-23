@@ -1,0 +1,28 @@
+{
+    "name": "simple-rules/simple-rules",
+    "description": "Simple rule evaluator",
+    "require-dev": {
+        "phpunit/phpunit": "6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Fleet",
+            "email": "jason.fleet@googlemail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SimpleRules\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "require": {
+        "php": ">=7.0.0"
+    }
+}

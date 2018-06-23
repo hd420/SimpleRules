@@ -1,0 +1,36 @@
+requires fruit.orange.count
+requires fruit.grapes.count
+
+set basket.count 0
+add basket.count fruit.orange.count
+add basket.count fruit.grapes.count
+
+set basket.max 3
+set basket.min 3
+set fruit.orange.max 2
+set fruit.grapes.max 3
+set fruit.grapes.min 1
+
+if
+    gt basket.count basket.max
+then
+    push messages "basket overfilled"
+fi
+
+if
+    lt basket.count basket.min
+then
+    push messages "basket underfilled"
+fi
+
+if
+    gt fruit.orange.count fruit.orange.max
+then
+    push messages "too many of fruit.orange"
+fi
+
+if
+    lt fruit.grapes.count fruit.grapes.min
+then
+    push messages "under ordered fruit.grapes"
+fi
